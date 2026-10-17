@@ -1,0 +1,12 @@
+services:
+  shartech-website:
+    image: ghcr.io/shartechcw/shartech-website:latest
+    container_name: shartech-website
+    ports:
+      - 3003:3000
+    restart: unless-stopped
+    networks:
+      - shartech-website  
+networks:
+ shartech-website:
+   external: true  

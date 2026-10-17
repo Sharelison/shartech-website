@@ -72,4 +72,8 @@ h3,
     --container: calc(100% - 2.5rem);
     --nav-h: 4.75rem;
   }
+
+  body:has(.nav--open) {
+    overflow: hidden;
+  }
 }
