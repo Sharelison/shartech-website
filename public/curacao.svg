@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" fill="none">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#B8D4E8"/>
+      <stop offset="55%" stop-color="#E8F0F4"/>
+      <stop offset="100%" stop-color="#D6E8E4"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1A6B7A"/>
+      <stop offset="100%" stop-color="#0E3F4A"/>
+    </linearGradient>
+    <linearGradient id="waterShine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2A8A9A" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#7EC8D4" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#2A8A9A" stop-opacity="0.3"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <!-- soft sun -->
+  <circle cx="1280" cy="160" r="54" fill="#F5E6C8" opacity="0.85"/>
+  <circle cx="1280" cy="160" r="90" fill="#F5E6C8" opacity="0.25"/>
+  <!-- distant hills -->
+  <path d="M0 520 Q200 470 420 500 T820 480 T1200 510 T1600 490 L1600 560 L0 560 Z" fill="#9BB5B0" opacity="0.35"/>
+  <!-- quay -->
+  <rect x="0" y="520" width="1600" height="40" fill="#6B6F74"/>
+  <rect x="0" y="548" width="1600" height="12" fill="#4E5256"/>
+  <!-- colorful facades (Handelskade inspired) -->
+  <!-- building 1 yellow -->
+  <rect x="80" y="280" width="160" height="240" fill="#E8C84A"/>
+  <rect x="80" y="260" width="160" height="28" fill="#D4B03A"/>
+  <rect x="104" y="320" width="36" height="48" fill="#F7F3E8"/>
+  <rect x="156" y="320" width="36" height="48" fill="#F7F3E8"/>
+  <rect x="104" y="400" width="36" height="48" fill="#F7F3E8"/>
+  <rect x="156" y="400" width="36" height="48" fill="#F7F3E8"/>
+  <rect x="130" y="470" width="48" height="50" fill="#3D2C1E"/>
+  <!-- building 2 coral -->
+  <rect x="250" y="240" width="180" height="280" fill="#D96B4E"/>
+  <rect x="250" y="220" width="180" height="30" fill="#C45A3F"/>
+  <rect x="278" y="290" width="40" height="54" fill="#F7F3E8"/>
+  <rect x="338" y="290" width="40" height="54" fill="#F7F3E8"/>
+  <rect x="278" y="380" width="40" height="54" fill="#F7F3E8"/>
+  <rect x="338" y="380" width="40" height="54" fill="#F7F3E8"/>
+  <rect x="310" y="460" width="56" height="60" fill="#2C2118"/>
+  <!-- building 3 teal -->
+  <rect x="440" y="260" width="150" height="260" fill="#2F8F8A"/>
+  <rect x="440" y="242" width="150" height="26" fill="#267872"/>
+  <rect x="464" y="310" width="36" height="48" fill="#F7F3E8"/>
+  <rect x="520" y="310" width="36" height="48" fill="#F7F3E8"/>
+  <rect x="464" y="390" width="36" height="48" fill="#F7F3E8"/>
+  <rect x="520" y="390" width="36" height="48" fill="#F7F3E8"/>
+  <rect x="488" y="465" width="50" height="55" fill="#2C2118"/>
+  <!-- building 4 peach -->
+  <rect x="600" y="300" width="140" height="220" fill="#E8A87C"/>
+  <rect x="600" y="282" width="140" height="24" fill="#D49568"/>
+  <rect x="624" y="340" width="32" height="44" fill="#F7F3E8"/>
+  <rect x="676" y="340" width="32" height="44" fill="#F7F3E8"/>
+  <rect x="624" y="410" width="32" height="44" fill="#F7F3E8"/>
+  <rect x="676" y="410" width="32" height="44" fill="#F7F3E8"/>
+  <!-- building 5 blue -->
+  <rect x="750" y="230" width="170" height="290" fill="#3B6FA0"/>
+  <rect x="750" y="210" width="170" height="28" fill="#2F5C86"/>
+  <rect x="778" y="280" width="40" height="54" fill="#F7F3E8"/>
+  <rect x="842" y="280" width="40" height="54" fill="#F7F3E8"/>
+  <rect x="778" y="370" width="40" height="54" fill="#F7F3E8"/>
+  <rect x="842" y="370" width="40" height="54" fill="#F7F3E8"/>
+  <rect x="808" y="455" width="52" height="65" fill="#2C2118"/>
+  <!-- building 6 ochre -->
+  <rect x="930" y="270" width="155" height="250" fill="#C9A227"/>
+  <rect x="930" y="252" width="155" height="26" fill="#B08E1C"/>
+  <rect x="956" y="320" width="36" height="48" fill="#F7F3E8"/>
+  <rect x="1012" y="320" width="36" height="48" fill="#F7F3E8"/>
+  <rect x="956" y="400" width="36" height="48" fill="#F7F3E8"/>
+  <rect x="1012" y="400" width="36" height="48" fill="#F7F3E8"/>
+  <!-- building 7 rose -->
+  <rect x="1095" y="250" width="165" height="270" fill="#C97B84"/>
+  <rect x="1095" y="232" width="165" height="26" fill="#B56972"/>
+  <rect x="1122" y="300" width="38" height="50" fill="#F7F3E8"/>
+  <rect x="1180" y="300" width="38" height="50" fill="#F7F3E8"/>
+  <rect x="1122" y="385" width="38" height="50" fill="#F7F3E8"/>
+  <rect x="1180" y="385" width="38" height="50" fill="#F7F3E8"/>
+  <rect x="1150" y="465" width="50" height="55" fill="#2C2118"/>
+  <!-- building 8 mint -->
+  <rect x="1270" y="290" width="145" height="230" fill="#7BAE9E"/>
+  <rect x="1270" y="272" width="145" height="24" fill="#68998A"/>
+  <rect x="1296" y="340" width="34" height="46" fill="#F7F3E8"/>
+  <rect x="1348" y="340" width="34" height="46" fill="#F7F3E8"/>
+  <rect x="1296" y="410" width="34" height="46" fill="#F7F3E8"/>
+  <rect x="1348" y="410" width="34" height="46" fill="#F7F3E8"/>
+  <!-- building 9 soft yellow -->
+  <rect x="1425" y="310" width="130" height="210" fill="#F0D56A"/>
+  <rect x="1425" y="294" width="130" height="22" fill="#DCC255"/>
+  <rect x="1450" y="350" width="30" height="42" fill="#F7F3E8"/>
+  <rect x="1498" y="350" width="30" height="42" fill="#F7F3E8"/>
+  <rect x="1450" y="420" width="30" height="42" fill="#F7F3E8"/>
+  <rect x="1498" y="420" width="30" height="42" fill="#F7F3E8"/>
+  <!-- water -->
+  <rect x="0" y="560" width="1600" height="340" fill="url(#water)"/>
+  <rect x="0" y="560" width="1600" height="80" fill="url(#waterShine)"/>
+  <!-- reflections -->
+  <g opacity="0.22">
+    <rect x="80" y="560" width="160" height="90" fill="#E8C84A"/>
+    <rect x="250" y="560" width="180" height="100" fill="#D96B4E"/>
+    <rect x="440" y="560" width="150" height="85" fill="#2F8F8A"/>
+    <rect x="600" y="560" width="140" height="75" fill="#E8A87C"/>
+    <rect x="750" y="560" width="170" height="105" fill="#3B6FA0"/>
+    <rect x="930" y="560" width="155" height="88" fill="#C9A227"/>
+    <rect x="1095" y="560" width="165" height="95" fill="#C97B84"/>
+    <rect x="1270" y="560" width="145" height="80" fill="#7BAE9E"/>
+    <rect x="1425" y="560" width="130" height="70" fill="#F0D56A"/>
+  </g>
+  <!-- subtle ripples -->
+  <path d="M0 640 Q200 630 400 645 T800 635 T1200 650 T1600 640" stroke="#8FD0DA" stroke-width="2" opacity="0.25"/>
+  <path d="M0 700 Q250 685 500 705 T1000 695 T1600 710" stroke="#8FD0DA" stroke-width="1.5" opacity="0.18"/>
+</svg>

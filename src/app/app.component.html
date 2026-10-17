@@ -1,0 +1,268 @@
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="nav" [class.nav--scrolled]="scrolled()" [class.nav--open]="menuOpen()">
+  <div class="nav__inner">
+    <a class="nav__brand" href="/" (click)="closeMenu()" aria-label="shartech home">
+      <img src="logo.png" alt="" width="40" height="27" />
+      <span class="brand-word">shartech</span>
+    </a>
+
+    <button
+      class="nav__toggle"
+      type="button"
+      [attr.aria-expanded]="menuOpen()"
+      aria-controls="site-menu"
+      aria-label="Toggle navigation"
+      (click)="toggleMenu()"
+    >
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav id="site-menu" class="nav__links" aria-label="Primary">
+      <a href="/#services" (click)="closeMenu()">What we do</a>
+      <a href="/#expertise" (click)="closeMenu()">Expertise</a>
+      <a href="/#experience" (click)="closeMenu()">Experience</a>
+      <a href="/#process" (click)="closeMenu()">Our approach</a>
+      <a routerLink="/about" (click)="closeMenu()">About</a>
+      <a class="nav__cta" href="/#contact" (click)="closeMenu()">Let’s talk <span aria-hidden="true">↗</span></a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  @if (router.url === '/about') {
+    <router-outlet />
+  } @else {
+  <section class="hero" id="top" aria-labelledby="hero-heading">
+    <div class="container hero__layout">
+      <div class="hero__content">
+        <p class="eyebrow hero__eyebrow"><span></span> Independent software engineering · Curaçao</p>
+        <h1 id="hero-heading">Complex ideas.<br /><span>Carefully built.</span></h1>
+        <p class="hero__lead">
+          We turn ambitious ideas into dependable software — and bring senior engineering
+          experience to teams building what’s next.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#contact">Start a conversation <span aria-hidden="true">↗</span></a>
+          <a class="btn btn--text" href="#services">Explore what we do <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero__note">
+          <span class="status-dot" aria-hidden="true"></span>
+          Working with teams in Curaçao and internationally
+        </div>
+      </div>
+
+      <div class="hero__visual">
+        <div class="hero__image">
+          <img src="hero.jpg" alt="A developer’s workspace with a laptop displaying code" width="2400" height="1598" />
+          <div class="hero__image-shade"></div>
+          <div class="image-caption"><span>Thoughtful engineering.</span><span>Built to last.</span></div>
+        </div>
+        <div class="hero-card hero-card--top">
+          <span class="hero-card__icon" aria-hidden="true">↗</span>
+          <span><strong>From first idea</strong><small>to production</small></span>
+        </div>
+        <div class="hero-card hero-card--bottom">
+          <div class="hero-card__avatars" aria-hidden="true"><span>S</span><span>+</span></div>
+          <span><strong>Senior-level delivery</strong><small>without the agency layers</small></span>
+        </div>
+        <span class="hero__orbit" aria-hidden="true"></span>
+      </div>
+    </div>
+    <div class="hero__bottom container">
+      <span>Product development</span><i></i><span>Engineering consultancy</span><i></i><span>Platform &amp; delivery</span>
+    </div>
+  </section>
+
+  <section class="client-strip" aria-label="Selected client experience">
+    <div class="container client-strip__inner">
+      <p>Experience trusted by</p>
+      <div class="client-strip__names">
+        @for (client of clients; track client) {
+          <span>{{ client }}</span>
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section services" id="services" aria-labelledby="services-heading">
+    <div class="container">
+      <div class="section-intro">
+        <div>
+          <p class="eyebrow">What we do</p>
+          <h2 id="services-heading">The right expertise<br />for the work ahead.</h2>
+        </div>
+        <p class="section-intro__copy">
+          Bring us a product to build or a team that needs experienced hands. Either way, you get
+          direct collaboration and software made for the real world.
+        </p>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card service-card--product">
+          <div class="service-card__top">
+            <span class="service-card__index">01 / PRODUCT</span>
+            <span class="service-card__mark" aria-hidden="true">✳</span>
+          </div>
+          <div class="service-card__body">
+            <h3>From idea to<br />shipped product.</h3>
+            <p>
+              A hands-on partner from the first conversation through architecture, build, launch,
+              and what comes next.
+            </p>
+            <ul>
+              <li>Web apps, APIs &amp; internal tools</li>
+              <li>Greenfield builds &amp; modernisation</li>
+              <li>Deployment, CI/CD &amp; handoff</li>
+            </ul>
+            <a class="service-card__link" href="#contact">Discuss your project <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="service-card__art service-card__art--product" aria-hidden="true">
+            <span></span><span></span><span></span><span></span>
+          </div>
+        </article>
+
+        <article class="service-card service-card--consulting">
+          <div class="service-card__top">
+            <span class="service-card__index">02 / CONSULTANCY</span>
+            <span class="service-card__mark" aria-hidden="true">↗</span>
+          </div>
+          <div class="service-card__body">
+            <h3>A senior engineer<br />on your team.</h3>
+            <p>
+              A trusted engineering partner who joins your team, takes ownership, and helps move
+              complex work forward.
+            </p>
+            <ul>
+              <li>Backend, frontend &amp; full-stack</li>
+              <li>Platform engineering &amp; OpenShift</li>
+              <li>CI/CD, testing &amp; Agile delivery</li>
+            </ul>
+            <a class="service-card__link" href="#contact">Talk about consultancy <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="service-card__art service-card__art--consulting" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="expertise" id="expertise" aria-labelledby="expertise-heading">
+    <div class="container expertise__layout">
+      <div class="expertise__intro">
+        <p class="eyebrow eyebrow--light">Engineering, end to end</p>
+        <h2 id="expertise-heading">Depth where it counts.<br /><span>Perspective across the stack.</span></h2>
+        <p>Practical skills, strong ownership, and the judgement to choose the right solution for the problem.</p>
+        <a class="expertise__link" href="#experience">See our experience <span aria-hidden="true">↗</span></a>
+      </div>
+
+      <div class="expertise__list">
+        @for (item of capabilities; track item.title; let i = $index) {
+          <article class="expertise-item">
+            <span class="expertise-item__number">0{{ i + 1 }}</span>
+            <div><h3>{{ item.title }}</h3><p>{{ item.text }}</p></div>
+            <span class="expertise-item__arrow" aria-hidden="true">↗</span>
+          </article>
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section experience" id="experience" aria-labelledby="experience-heading">
+    <div class="container experience__layout">
+      <div class="experience__story">
+        <p class="eyebrow">Experience with purpose</p>
+        <h2 id="experience-heading">Trusted in complex environments.</h2>
+        <p>
+          More than eight years delivering software for banks, government institutions, and large
+          organisations in the Netherlands. Now bringing that experience to shartech in Curaçao.
+        </p>
+        <div class="experience__links">
+          <a href="https://www.toptal.com/developers/resume/sharelison-caldera" target="_blank" rel="noopener noreferrer">Toptal profile <span aria-hidden="true">↗</span></a>
+          <a href="https://linkedin.com/in/sharelison" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+
+      <div class="experience__credentials">
+        <p class="experience__label">Credentials &amp; recognition</p>
+        <div class="credential-grid">
+          @for (cred of credentials; track cred.label) {
+            <article class="credential">
+              <span class="credential__seal" aria-hidden="true">✳</span>
+              <strong>{{ cred.label }}</strong>
+              <span>{{ cred.detail }}</span>
+            </article>
+          }
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="process" id="process" aria-labelledby="process-heading">
+    <div class="container">
+      <div class="process__heading">
+        <div>
+          <p class="eyebrow">A simple, considered process</p>
+          <h2 id="process-heading">Good work starts<br />with clear thinking.</h2>
+        </div>
+        <p>Small, focused steps keep the work transparent and the outcome grounded in what you actually need.</p>
+      </div>
+      <ol class="steps">
+        @for (step of steps; track step.n) {
+          <li class="step">
+            <span class="step__n">{{ step.n }}</span>
+            <span class="step__rule"></span>
+            <h3>{{ step.title }}</h3>
+            <p>{{ step.text }}</p>
+          </li>
+        }
+      </ol>
+    </div>
+  </section>
+
+  <section class="location" aria-labelledby="location-heading">
+    <div class="location__art"><img src="curacao.svg" alt="" loading="lazy" /></div>
+    <div class="location__content">
+      <p class="eyebrow eyebrow--light">Rooted in Curaçao</p>
+      <h2 id="location-heading">Local perspective.<br /><span>Global standards.</span></h2>
+      <p>A Curaçao software company, ready for on-island collaboration and international work.</p>
+      <span class="location__address">Weg naar westpunt 40 · Curaçao</span>
+    </div>
+  </section>
+
+  <section class="contact" id="contact" aria-labelledby="contact-heading">
+    <div class="container">
+      <div class="contact__panel">
+        <div class="contact__copy">
+          <p class="eyebrow eyebrow--light">Let’s make progress</p>
+          <h2 id="contact-heading">Have something<br />worth building?</h2>
+          <p>Tell us where you want to go. We’ll help you figure out the next step.</p>
+        </div>
+        <div class="contact__actions">
+          <a class="btn btn--light" href="mailto:info&#64;shartechcw.com">
+            Email shartech <span aria-hidden="true">↗</span>
+          </a>
+          <a class="btn btn--outline" href="https://wa.me/59995164025" target="_blank" rel="noopener noreferrer">
+            WhatsApp <span aria-hidden="true">↗</span>
+          </a>
+          <a class="contact__email" href="mailto:info&#64;shartechcw.com">info&#64;shartechcw.com</a>
+        </div>
+        <span class="contact__decoration" aria-hidden="true">s.</span>
+      </div>
+    </div>
+  </section>
+  }
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <a class="footer__brand" href="/" aria-label="shartech home">
+      <img src="logo.png" alt="" width="36" height="24" />
+      <span class="brand-word">shartech</span>
+    </a>
+    <p class="footer__details">Weg naar westpunt 40, Curaçao <span>·</span> KvK 166102</p>
+    <p class="footer__copy">© 2026 shartech. All rights reserved.</p>
+  </div>
+</footer>

@@ -1,0 +1,75 @@
+:root {
+  --ink: #1b2b2e;
+  --ink-soft: #536164;
+  --ink-muted: #758184;
+  --sea: #147b6e;
+  --sea-deep: #105d54;
+  --sea-soft: #e5f1ec;
+  --paper: #f6f7f2;
+  --white: #ffffff;
+  --line: #dfe6e1;
+  --shadow: 0 22px 60px rgba(27, 43, 46, 0.1);
+  --radius: 14px;
+  --font-display: "Manrope", sans-serif;
+  --font-body: "DM Sans", sans-serif;
+  --container: min(1200px, calc(100% - 3.5rem));
+  --nav-h: 5.25rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  color: var(--ink);
+  background: var(--paper);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+h1,
+h2,
+h3,
+.brand-word {
+  font-family: var(--font-display);
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+}
+
+::selection {
+  background: rgba(20, 123, 110, 0.2);
+}
+
+@media (max-width: 720px) {
+  :root {
+    --container: calc(100% - 2.5rem);
+    --nav-h: 4.75rem;
+  }
+}
